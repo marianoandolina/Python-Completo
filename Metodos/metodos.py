@@ -41,20 +41,43 @@ print(mayus2)
 # Pone todo en minusculas
 
 print(cadena_1.lower()) # Muestra lo que esta guardado en la variable pero todo en minusculas
-mayus = cadena_1.lower() # Guarda en esta varible lo que esta en cadena_1 pero pasado todo a minusculas
-mayus2 = "hola todos, como estan".lower() # Transforma todo en minusculas el str que precede al punto y lo guarda en la variable
-print(mayus) 
-print(mayus2)
+minus = cadena_1.lower() # Guarda en esta varible lo que esta en cadena_1 pero pasado todo a minusculas
+minus2 = "hola todos, como estan".lower() # Transforma todo en minusculas el str que precede al punto y lo guarda en la variable
+print(minus) 
+print(minus2)
 
 # CAPITALIZE
 
 # Pone la letra de cada palabra en Mayuscula
 
 print(cadena_1.capitalize()) # Muestra lo que esta guardado en la variable pero con la primera letra del str en Mayuscula 
-mayus = cadena_1.capitalize() # Guarda en esta varible lo que esta en cadena_1 pero con la primera letra del str en mayuscula
-mayus2 = "hola todos, como estan".capitalize() # Transforma la primera letra del str que precede al punto en mayuscula y lo guarda en la variable
-print(mayus)
-print(mayus2)
+capi = cadena_1.capitalize() # Guarda en esta varible lo que esta en cadena_1 pero con la primera letra del str en mayuscula
+capi2 = "hola todos, como estan".capitalize() # Transforma la primera letra del str que precede al punto en mayuscula y lo guarda en la variable
+print(capi)
+print(capi2)
+
+# FIND
+
+# Busca una cadena en otra cadena
+
+# Busca la letra a dentro del str que esta en cadena_1 y nos retorna el indice donde se encuentra
+# Nos devuelve -1 cuando no encuentra el valor
+# Python es case sensitive o sea qu ojo con las mayusculas y minusculas
+# Los espacios cuentan como caracter, tienen index tambien
+
+busqueda_find = cadena_1.find('a') 
+print(busqueda_find) # Retorna 3 porque la letra a esta en la posicion 3 
+
+# INDEX 
+
+# Igual a find
+# Si no encuentra nada lanza una excepcion a diferencia de find
+
+busqueda_index = cadena_1.index('a') 
+print(busqueda_index) # Retorna 3 porque la letra a esta en la posicion 3
+
+
+
 
 
 
