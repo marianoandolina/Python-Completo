@@ -21,3 +21,11 @@ print(3 in a)  # Devuelve True
 print(8 in a)  # Devuelve False
 # Aca le digo que 3 no esta en a.
 print(3 not in a)  # Nos devuelve False porque 3 si esta en a.
+
+# Realizamos un if con el operador "not in" par agregar un elemto a la lista
+if 6 not in a: # Si 6 no esta en a entonces
+    # Accion
+    a.append(6)
+    print(a)
+    print('El numero 6 ha sido agregado')
+
