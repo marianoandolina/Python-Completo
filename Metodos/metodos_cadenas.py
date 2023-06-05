@@ -134,3 +134,30 @@ print(empieza_con)
 
 termina_con = cadena_1.endswith('o')  # Devuelve True
 print(termina_con)
+
+# REPLACE 
+
+# Reemplaza una parte de la cadena por otra, ambas son pasadas como parametro
+
+# Al metodo replace, le pasamos como primer parametro la parte de la cadena que queremos reemplazar y como segundo parametro con que la vamos a reemplazar
+# Si no encuentra el primer parametro en la cadena
+cadena_nueva = cadena_1.replace('Hola', 'Chao')
+print(cadena_nueva)
+
+# SPLIT
+
+# Separa la cadena como una lista
+# Este metodo es el unico de todos los que tenemos aqui que nos devuelve una lista
+# Una vez aplicado el metodo a la cadena podemos trabajar esta cadena como una lista
+# Separa por cada espacio y no por cada caracter
+# No toma los espacios como caracter
+
+print(type(cadena_1)) # Vemos que tipo de dato es cadena_1, devuelve 'str'
+split = cadena_1.split() # Usamos el metodo split para separar la cadena y guardarla en la variable split
+print(split) # Muestra la variable split 
+print(type(split)) # Muestra que tipo de dato es split, devuelve 'list'
+
+
+
+
+
