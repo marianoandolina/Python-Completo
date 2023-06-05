@@ -1,5 +1,11 @@
-nombres = ['mariano','oriana','diamante',56,'todos',67]
-print(nombres)
+diccionario = {
+    'nombre': 'Mariano',
+    'apellido': 'Andolina',
+    'edad': 40
+}
 
-nombres.sort()
-print(nombres)
+print(diccionario)
+
+diccionario['pie'] = 'derecho'
+
+print(diccionario)
