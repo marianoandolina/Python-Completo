@@ -1,5 +1,5 @@
-nombres = "mariano oriana myrian diamante tomas solchu morena"
-lista_nombres = list(nombres)
-
+nombres = ['mariano','oriana','diamante',56,'todos',67]
 print(nombres)
-print(lista_nombres)
+
+nombres.sort()
+print(nombres)
