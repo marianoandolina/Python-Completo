@@ -25,8 +25,6 @@ nombre = diccionario.get('nombre') # Retorna Mariano
 apellido = diccionario.get('apellido') # Retorna Andolina
 print(nombre, apellido)
 
-#
-
 # CLEAR
 
 # Elimina todo del diccionario
