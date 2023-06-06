@@ -5,7 +5,5 @@ diccionario = {
 }
 
 print(diccionario)
-
 diccionario['pie'] = 'derecho'
-
 print(diccionario)
