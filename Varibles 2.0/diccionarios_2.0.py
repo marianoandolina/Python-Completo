@@ -37,8 +37,8 @@ print(diccionario5, type(diccionario5))
 print("---------------------")
 
 # y si le pasamos de la siguiente manera vemos lo que ocurre
-
-diccionario6 = dict.fromkeys('hola','chau')
+# a cada caracter de la palabra 'hola' le asigna el valor 'chau'
+diccionario6 = dict.fromkeys('hola','chau') 
 print(diccionario6,type(diccionario6))
 print("---------------------")
 
