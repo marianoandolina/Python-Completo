@@ -117,6 +117,7 @@ print('-------------------------------------')
 print('Solo el valor')
 print('Funcion enumerate()')
 print()
+
 for num in enumerate(numeros):
     # en el indice 1 se encuentra el valor
     print(num[1])
