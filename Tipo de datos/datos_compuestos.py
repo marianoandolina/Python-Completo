@@ -2,10 +2,13 @@
 Son datos que adentro tiene datos simples u otros datos compuestos pero 
 que podemos agruparlos
 '''
+'''Listas'''
 
 # Las listas son un tipo de dato compuesto
 
 # Creamos una lista
+# Las listas van entre corchetes
+
 # Esta lista contiene 3 elementos.
 mariano = ['40 años', '183 de altura', 'Argentino']
 print(mariano)  # Muestra la lista mariano

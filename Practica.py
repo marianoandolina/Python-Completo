@@ -1,17 +1,14 @@
-diccionario = {
-    'nombre': 'Mariano',
-    'apellido': 'Andolina',
-    'edad': 40
-}
+nombre = "Mariano"
+apellido = "Andolina"
+edad = '40'
 
-print(diccionario)
-diccionario['pie'] = 'derecho'
-print(diccionario)
+datos_mariano = list[apellido, nombre, edad]
 
+print(datos_mariano)
 
-print("Hola, estoy escribiendo en todos los print al mismo tiempo")
-print("Hola, estoy escribiendo en todos los print al mismo tiempo")
-print("Hola, estoy escribiendo en todos los print al mismo tiempo")
-print("Hola, estoy escribiendo en todos los print al mismo tiempo")
-print("Hola, estoy escribiendo en todos los print al mismo tiempo")
-print("Hola, estoy escribiendo en todos los print al mismo tiempo")
+datos_mariano2 = dict(nombre=nombre, apellido=apellido, eda=edad)
+print(datos_mariano2)
+
+datos_mariano_3 = dict().fromkeys(
+    ['nombre', 'apellido', 'edad'], [nombre, apellido, edad])
+print(datos_mariano_3)
