@@ -72,3 +72,16 @@ resultado_all_2 = all(
 
 print(resultado_all_1)  # retorna True
 print(resultado_all_2)  # retorna False
+
+"""Funcion sum()"""
+# esta funcion suma todos los valores de un iterable
+# tienen que ser numeros porque de lo contrario devuelve un error
+
+print("----------------------------------")
+print("Funcion sum()")
+print()
+
+# almacenamos en una variable la suma de la lista numeros
+suma_total = sum(numeros)
+# mostramos en consola la lista numeros
+print(f"La suma total de los numeros es {suma_total}")
