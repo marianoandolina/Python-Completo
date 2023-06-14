@@ -132,7 +132,7 @@ print()
 # desempaquetamos los valores que retorna la funcion en 2 variables
 password, primer_numero = crear_contraseña_2(516)
 # mostramos por consola la contraseña
-print(f"La contraseña creada es {contraseña}")
+print(f"La contraseña creada es {password}")
 # mostramos por consola el numero usado para crear la contraseña
 print(f"El numero que se uso para crearla fue el {primer_numero}")
 

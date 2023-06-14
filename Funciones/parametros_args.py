@@ -13,6 +13,7 @@ def suma_no_optima(lista):
 print()
 print("-----------------------------------------------")
 print("Forma no optima de hacer una funcion para sumar")
+
 resultado_1 = suma_no_optima([1, 2, 3])
 print(resultado_1)
 
@@ -48,3 +49,17 @@ print("Pasando un parametro y *args")
 resultado_3 = suma_optima_2("Mariano", 3, 5, 6, 1)
 # mostramos por consola el resultado
 print(resultado_3)
+
+
+# de esta forma utilizamos el *args dentro de la funcion
+# el parametro que coloquemos aca tiene que estar dentro de una lista para que sea 1 solo parametro
+def suma_optima_3(numeros):
+    return sum([*numeros])
+
+
+print()
+print("-----------------------------------------------")
+print("Forma optima de hacer una funcion para sumar pero con el * en el return")
+
+resultado_4 = suma_optima_3([3, 5, 6, 1])
+print(resultado_4)
