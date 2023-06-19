@@ -2,11 +2,14 @@
 """ 
 Las principales caracteristicas de las funciones lambda son:
 
+---> Son denominadas funciones anonimas
 ---> Son creadas para ahorrar lineas de codigo, para usar menos bloques de memoria
 ---> Realizan el return de manera automatica
 ---> No son aptas cuando tenemos que realizar mas de una instruccion
+---> Permiten pasar multiples argumentos
+---> Solo permite una expresion, es decir una sola linea de codigo
+---> Estructura : lambda arg1, arg2: expression
 """
-
 
 # basicamente es como crear una funcion anonima
 # creamos la funcion con el nombre "multiplicar_por_2"
@@ -72,3 +75,76 @@ print("Lo mismo que antes pero con la funcion lambda")
 print()
 # retorna lo mismo que antes pero ahora realizado con la funcion lambda
 print(list(numeros_pares_2))
+
+# Ejemplos de Funcines lambda (YouTube:Dimas)
+# Estructura
+suma = lambda a, b: a + b
+# llamamos a la funcion, pasamos como argumentos 5 y 9
+print(suma(5, 9))
+# llamamos a la funcion, pasamos como argumentos 6 y 2
+print(suma(6, 2))
+
+# recive como argumento un nombre y muestra por consola el saludo utilizando ese nombre
+saludar = lambda nombre: print(f"Hola {nombre} !!!")
+
+print("-------------------------------------------------")
+saludar("Mariano")
+saludar("Oriana")
+
+# HACEMOS UNA FUNCION LAMBDA PARA DEVOLVER EL NUMERO MAXIMO
+
+#       En la variable maximo hacemos la function lambda con 3 parametros (a,b,c)
+#       luego usamos la funcion max() dentro de la expresion para que nos devuelva el maximo
+#       de esos 3 valores (a,b,c)
+
+maximo = lambda a, b, c: print(f"El maximo entre {a}, {b} y {c} es {max(a, b, c)}")
+
+print("-------------------------------------------------")
+maximo(5, 78, 2)
+maximo(8, 42, 23)
+
+#       UTILIZANDO FUNCIONES LAMBDA DENTRO DE FUNCIONES CONVENCIONALES
+
+#       Podemos utilizar las funciones lambda dentro de funciones convencionales.
+#       Esto nos permite generar diversas funciones lambda con diversos parametros
+#
+#       Vamos a los ejemplos:
+
+#       Generamos una funcion que crea una lambda
+#       para poder ingresar distintos parametros
+
+
+def poner_prefijo(prefijo):
+    return lambda nombre: f"{prefijo} {nombre}"
+
+
+#       Mediante estas variables fijamos el parametro "prefijo"
+
+add_mr = poner_prefijo("Mr")
+add_sr = poner_prefijo("Sr")
+add_miss = poner_prefijo("Miss")
+
+#       Cuando llamamos a la funcion le pasamos el "nombre" por parametro
+
+print("-------------------------------------------------")
+print(add_mr("Mariano"))
+print(add_sr("Gabriel"))
+print(add_miss("Francesca"))
+
+#       Creamos una funcion para elevar un numero a un exponenete,
+#       nos retorna una funcion lambda que realiza la cuenta.
+
+
+def elevar_a(exponente):
+    return lambda base: base**exponente
+
+
+#       Fijamos el parametro "exponente"
+
+elevar_cuadrado = elevar_a(2)
+elevar_cubo = elevar_a(3)
+
+#       Al llamar a la funcion le pasamos como parametro el "base"
+print("-------------------------------------------------")
+print(elevar_cuadrado(3))
+print(elevar_cubo(2))
