@@ -1,14 +1,15 @@
-nombre = "Mariano"
-apellido = "Andolina"
-edad = '40'
+area_circulo = lambda radio: 3.14 * radio * radio
 
-datos_mariano = list[apellido, nombre, edad]
+print(area_circulo(2))
 
-print(datos_mariano)
+tu_nombre = lambda nombre: print(f"Hola {nombre}, como estas?")
 
-datos_mariano2 = dict(nombre=nombre, apellido=apellido, eda=edad)
-print(datos_mariano2)
+tu_nombre("Mariano")
 
-datos_mariano_3 = dict().fromkeys(
-    ['nombre', 'apellido', 'edad'], [nombre, apellido, edad])
-print(datos_mariano_3)
+colores = ["azul", "verde", "amarillo", "rojo"]
+
+primer_color = lambda color_1: print(
+    f"El color que esta en la posicion 1 es el color {color_1[0]}"
+)
+
+primer_color(colores)

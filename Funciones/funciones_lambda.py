@@ -1,4 +1,4 @@
-"""Funciones lambda"""
+"""Funciones lambda"""  # Cursos de YouTube de Dalto + Dimas
 """ 
 Las principales caracteristicas de las funciones lambda son:
 
