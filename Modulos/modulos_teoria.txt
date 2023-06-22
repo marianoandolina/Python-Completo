@@ -18,4 +18,29 @@ Modulos propios: Son los que creamos nosotros para utilizar y facilitarnos la vi
 
 ** Los modulos de terceros y los propios en significado son lo mismo.
 
+IMPORTAR LOS MODULOS (name space)
+
+
+Se importan siempre al principio de cada archivo usando el comando import
+Ej: import date 
+
+Importar lo que queremos de cada modulo usando la siguiente sintaxis
+Ej: from date import xxx  # Estamos diciendo que del modulo date importe la funcion xxx
+    
+Podemos usar el metodo as para asignarle nombres a los metodos importados
+Ej: import date as dt # Le estamos indicando que para usar el modulo date vamos a usar la palabra dt 
+
+Importamos todo lo que hay en el modulo
+Ej: from modulox import *
+Esta de por si es una mala practica
+
+Tenemos que prestar atencion al momento de crear las funciones que no tenga los mismos nombres que variables porque 
+cuando querramos importarla en otro archivo nos va a tirar un error.
+Tenemos que diferenciar claramente una funcion de una variable.
+
+
+
+
+
+
 
