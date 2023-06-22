@@ -1,0 +1,21 @@
+MODULOS
+ 
+Basicamente todos los archivos terminados en .py son modulos.
+Les decimos modulos porque desde un modulo podemos crear otro.
+Desde un modulo podemos acceder a otro.
+Podemos formar paquetes.
+Podemos llamar funciones de un modulo a otro.
+
+TIPOS DE MODULOS
+
+Tenemos 3 tipos de modulos:
+
+Python mdules: Estan escritos en C para Python.
+
+Modulos de terceros: Son los modulos que hacen otros y que nosotros descargamos para usar
+
+Modulos propios: Son los que creamos nosotros para utilizar y facilitarnos la vida
+
+** Los modulos de terceros y los propios en significado son lo mismo.
+
+
