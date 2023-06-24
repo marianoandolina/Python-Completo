@@ -40,6 +40,7 @@ sys.path.append(
 
 print(sys.path)
 
+# importamos el modulo y le ponemos el nombre con el que lo vamos a usar
 # aunque lo marque como error esta funcionando
 import saludar_afuera as mod_sal
 
