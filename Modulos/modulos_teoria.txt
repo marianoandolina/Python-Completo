@@ -10,7 +10,7 @@ TIPOS DE MODULOS
 
 Tenemos 3 tipos de modulos:
 
-Python mdules: Estan escritos en C para Python.
+Python modules: Estan escritos en C para Python.
 
 Modulos de terceros: Son los modulos que hacen otros y que nosotros descargamos para usar
 
