@@ -73,3 +73,57 @@ print(
     f"Las filas totales son {filas_totales_d} y las columnas totales son {columnas_totales_d}"
 )
 print("------------------------------------------")
+
+# obteniendo data estadistica del dataframe
+df_info = df.describe()
+print(df_info)
+print("------------------------------------------") 
+
+# accediendo a la edad de la fila 2 con loc
+elemento_especifico_loc = df.loc[2,"edad"]
+print(elemento_especifico_loc)
+print("------------------------------------------")
+
+# accediendo a la edad de la fila 2 con iloc
+# el primer numero pasado corresponde al numero de fila
+# el segundo numero pasado corresponde al indice de la columna 
+# los indices de las columnas comienzan en 0 y la primer columna en este caso es "nombre"
+elemento_especifico_iloc = df.iloc[2,2]
+# nos retorna lo mismo que el anterior, estamos haciendo lo mismo pero buscando solo con indices
+print(elemento_especifico_iloc)
+print("------------------------------------------")
+
+# accediendo a todas las filas de una columnas
+# al no pasarle ningun numero como indice es como si hubieramos puesto 0
+# el segundo parametro pasado igual que en el ejemplo anterior es el indice de la columna, en este caso es "apellido"
+# recordemos el indice 0 es "nombre", el indice 1 es "apellido" y el indice "2" es edad
+# el slicing lo que indica de que fila a que fila vamos a mostrar
+apellidos = df.iloc[:,1]
+print(apellidos)
+print("------------------------------------------")
+
+# mostrando de la fila 0 a la 1
+# muestra la fila 0 y la 1
+apellidos = df.iloc[:2,1]
+print(apellidos)
+print("------------------------------------------")
+
+# accediendo a la fila 3 con loc
+fila_3 = df.loc[2,:]
+print(fila_3)
+print("------------------------------------------")
+
+# accediendo a la fila 3 con iloc
+fila_3_iloc = df.loc[2,:]
+print(fila_3_iloc)
+print("------------------------------------------")
+
+# accediendo a filas con edad mayor a 30
+mayor_que_30 = df.loc[df["edad"]>30,:]
+print(mayor_que_30)
+print("------------------------------------------")
+
+
+
+
+
