@@ -87,7 +87,14 @@ print(resultado_11)
 print("-----------------------------------------------------------------")
 
 # armar una cadena que busque un numero, seguido de un punto y un espacio
+# busca el patron completo de la busqueda que pusimos.
 
 resultado_12 = re.findall(r"\d\.\s", texto)
 print(resultado_12)
+print("-----------------------------------------------------------------")
+
+# ^ --> busca el comienzo de una linea
+
+resultado_13 = re.findall(r"^Hola", texto)
+print(resultado_13)
 print("-----------------------------------------------------------------")
