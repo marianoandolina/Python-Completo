@@ -5,7 +5,7 @@
 import re
 
 texto = """Hola. Como estas, esta es la cadena 1.?
-Esta es la segunda linea de texto o sea 2.
+Esta es la segunda linea de texto o sea 2 entoneces no es tres.
 Y esta es la tercera linea de texto, entonces por supuesto seria la 3 o tres.
 """
 print("-----------------------------------------------------------------")
@@ -73,13 +73,13 @@ resultado_10 = re.findall(r".", texto)
 print(resultado_10)
 print("-----------------------------------------------------------------")
 
-# \n --> busca TODO lo que sean saltod de linea
+# \n --> busca TODO lo que sean saltos de linea
 
 resultado_10 = re.findall(r"\n", texto)
 print(resultado_10)
 print("-----------------------------------------------------------------")
 
-# \n --> cancela caracteres especiales
+# \ --> cancela caracteres especiales
 
 # cancelando la busqueda de todo y buscar puntos.
 resultado_11 = re.findall(r"\.", texto)
@@ -94,7 +94,50 @@ print(resultado_12)
 print("-----------------------------------------------------------------")
 
 # ^ --> busca el comienzo de una linea
+# buscando hola al principio de una linea
 
 resultado_13 = re.findall(r"^Hola", texto)
 print(resultado_13)
 print("-----------------------------------------------------------------")
+
+# ^ --> busca el comienzo de una linea
+# buscando Esta al principio de una linea
+# colocamos el flag para buscar en multilineas o sea todas las lineas que ocupa la cadena
+# para poner mas de 1 flag usamos el + entre cada flag
+
+resultado_14 = re.findall(r"^esta", texto, flags=re.IGNORECASE + re.M) 
+print(resultado_14)
+print("-----------------------------------------------------------------")
+
+# $ --> busca el final de una linea
+
+resultado_15 = re.findall(r"tres.$", texto, flags=re.IGNORECASE + re.M)  
+print(resultado_15)
+print("-----------------------------------------------------------------")
+
+#{n} --> busca n cantidad de veces el valor de la izquierda
+# buscamos 3 numeros juntos y un espacio
+resultado_16 = re.findall(r"\d{3}\s", texto, flags=re.M + re.IGNORECASE)
+print(resultado_16)
+# en este caso no retorna nada porque no hay en la cadena 
+print("-----------------------------------------------------------------")
+
+# {n,m} --> busca al menos n y maximo m
+resultado_17 = re.findall(r"\d{2,3}\s", texto, flags=re.M + re.IGNORECASE)
+print(resultado_17)
+print("-----------------------------------------------------------------")
+
+# buscamos en conjunto
+# nos busca la los caracteres es y le pedimos que encuentre un minimo de 1 y un maximo de 4
+
+resultado_18 = re.findall(r"\d{2,4}", texto)
+print(resultado_18)
+print("-----------------------------------------------------------------")
+
+# | --> busca una cosa o la otra
+# nos devuelve primero lo que esta primero en la cadena
+
+resultado_19 = re.findall(r"\d{2,4}|Hola", texto)
+print(resultado_19)
+print("-----------------------------------------------------------------")
+
