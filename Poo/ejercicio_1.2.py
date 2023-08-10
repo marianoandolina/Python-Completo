@@ -15,4 +15,9 @@ estudiante = Estudiante(nombre, edad, grado)
 
 print(f"El estudiante se llama {estudiante.nombre}, tiene {estudiante.edad} años y cursa en el grado {estudiante.grado}.")
 
-estudiante.estudiar()
+while True:
+    estudiar = input()
+    if estudiar.lower() == "estudiar":
+        estudiante.estudiar()
+        break
+
