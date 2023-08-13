@@ -59,5 +59,33 @@ print(persona_1.presentarse_clase_padre())
 print(persona_1.presentarse())
 
 
+# issubclass(param1, param2)
+
+# Para saber si una clase heredad de otra usamos issubclass()
+herencia = issubclass(EmpleadoArtista, Persona)
+# mostramos por pantalla, True or False
+print(herencia) # nos muestra True porque EmleadoArtista hereda de Persona
+# chequeamos ahora si Artista es subclase de Persona, nos tiene que devolver False porque no lo es
+herencia_2 = issubclass(Artista, Persona)
+print(herencia_2)
+
+# isinstance(param1, param2)
+
+# Usamos isinstance() para saber si un objeto o instancia pertenece a una clase
+
+instancia = isinstance(persona_1,EmpleadoArtista) # 
+print(instancia) # Nos devuelve True
+
+# en el caso de que la clase herede de otra tambien nos va a dar True
+
+instancia_2 = isinstance(persona_1, Artista)
+print(instancia_2) # devuelve True
+
+instancia_3 = isinstance(persona_1, Persona)
+print(instancia_3) # devuelve True
+
+
+
+
 
 
