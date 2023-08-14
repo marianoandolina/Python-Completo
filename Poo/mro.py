@@ -1,6 +1,6 @@
 #       METHOD RESOLUTION ORDER (mro)
 
-#       Define el orden por el cual python llama atributos y metodos en las clases
+#       Define el orden por el cual python busca atributos y metodos en las clases
 
 class A:
     def hablar(self):
@@ -10,13 +10,21 @@ class B(A):
     def hablar(self):
         print("Hola desde clase B")      
 
-class C(A):
+class C():
     def hablar(self):
         print("Hola desde clase C")      
 
-class D(B,C):
+class D(C):
     def hablar(self):
         print("Hola desde clase D")      
 
 d = D()
 d.hablar()
+
+# practicar mro
+# para saber el orden de ejecucion podemos usar el metodo mro()
+
+# ej:
+
+print(D.mro())
+
