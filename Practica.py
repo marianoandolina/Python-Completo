@@ -1,15 +1,9 @@
-area_circulo = lambda radio: 3.14 * radio * radio
+def recorrer(elemento):
+    for item in elemento:
+        print(f"El elemeto actual es: {item}")
 
-print(area_circulo(2))
+lista = [1,2,3,4]        
+lista_2 = ["maquina","como","andas"]
 
-tu_nombre = lambda nombre: print(f"Hola {nombre}, como estas?")
-
-tu_nombre("Mariano")
-
-colores = ["azul", "verde", "amarillo", "rojo"]
-
-primer_color = lambda color_1: print(
-    f"El color que esta en la posicion 1 es el color {color_1[0]}"
-)
-
-primer_color(colores)
+recorrer(lista)
+recorrer(lista_2)

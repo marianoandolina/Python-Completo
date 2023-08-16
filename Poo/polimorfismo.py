@@ -1,7 +1,9 @@
 #       POLIMORFISMO
 
 #       Es darle una orden a un objeto y obtener diferentes respuestas de acuerdo a sus atributos
+#       Implementar una misma funcion en diferentes tipos de datos y que igualmente funcione
 
+#       DE INCLUSION O ADD OCC
 class Gato():
     def sonido(self):
         return "Miau"
@@ -27,4 +29,13 @@ hacer_sonido(gato)
 hacer_sonido(perro)
 
 # POLIMORFISMO DE HERENCIA O CON HERENCIA, TAMBIEN LLAMADO DE SUBCLASE
+
+# En el polimorfismo de herencia necesitamos que las clases esten relacionadas mediante herencias entre cada una. 
+# Hay otros tipos de polimorfismos pero no existen en Python
+
+#       INVESTIGAR SOBRE:
+
+# DUCK TYPING
+# ENLACES DINAMICOS Y ESTATICOS
+# TIPO REAL Y TIPO DECLARADO
 
