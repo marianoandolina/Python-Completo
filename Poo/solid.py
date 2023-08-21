@@ -25,7 +25,12 @@
 
 #       Al hacer esto el codigo se vuelve mas legible, mas facil de mantener.
 
-# O
+# OCP
+#       Open/Closed Principle o Principio de abierto y cerrrado
+
+#       Este principio nos dice que las entidades de software tienen que estar abiertas para la extencion pero cerradas para la modificacion
+#       Basicamente lo que nos dice es que tendriamos que no tener problemas para agregarle funcionalidades a una clase
+
 # L
 # I
 # D

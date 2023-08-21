@@ -29,6 +29,7 @@ class Auto:
 # Ejemplo del mismo codigo bien impletmentado respetando el principio SRP
 
 
+# Una clase se ocupa de lo respectivo al combustible
 class TanqueDeCombustible:
     def __init__(self):
         self.combustible = 100
@@ -43,6 +44,7 @@ class TanqueDeCombustible:
         self.combustible -= cantidad
 
 
+# Otra clase se ocupa del movimiento del auto
 class Auto:
     def __init__(self, tanque):
         self.posicion = 0
