@@ -32,7 +32,7 @@ class EmpleadoArtista(Persona, Artista):
         self.empresa = empresa
 
     # para heredar un metodo de la clase padre utilizamos super()
-    # en este caso que estamos usando metodos, su usamos self nos trae el metodo de la clase actual y si usamos super() nos trae el metodo de la clase padre.
+    # en este caso que estamos usando metodos, si usamos self nos trae el metodo de la clase actual y si usamos super() nos trae el metodo de la clase padre.
     def presentarse_clase_padre(self):
         return f"Hola, soy {self.nombre}, {super().mostrar_habilidad()} y trabajo en {self.empresa}"
     

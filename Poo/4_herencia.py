@@ -25,6 +25,9 @@ class Empleado(Persona):
     def trabajando(self):
         print("Hola, soy {self.nombre} y estoy trabajando")
 
+# Si creamos un metodo del mismo nombre en la clase padre y en la clase hija, el metodo que se va a ejecutar es el de la clase hija
+# porque el de la clase padre seria como el metodo por defecto y al escribirlo en la clase hija lo estamos como sobreescribiendo
+
 # Creamos la instancia de la clase Empleado que es la que hereda de la clase Persona
 mariano = Empleado("Mariano","40","Argentino","Aviador",700000)
 
