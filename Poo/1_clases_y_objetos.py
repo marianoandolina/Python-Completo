@@ -1,5 +1,15 @@
 # CURSO DE POO DE SOY DALTO (https://www.youtube.com/watch?v=HtKqSJX7VoM&t=12s)
 
+"""
+RECORDATORIO
+
+Camel case = primeraLetraMinuscula (Primmera letra minuscula)
+Snake case = separamos_con_guion_bajo
+Pascal case = IgualQueCamel (Pero primera letra mayuscula)
+
+Variables = snake_case
+Clases y Objetos = PascalCase
+"""
 
 #       CLASES
 #   
@@ -14,7 +24,7 @@
 # Por convencion standard para definir una clase se utiliza pascal case
 # En esta primera creacion de una clase usamos atributos que son estaticos.
 
-
+# creamos la clase celular con los atributos estaticos (lo que significa que el objeto que creemos ya va a tener esos atributos.)
 class Celular():
     marca = "Samsung" # Atributo estatico
     modelo = "S23" # Atributo estatico
@@ -23,12 +33,15 @@ class Celular():
 # Creamos un objeto a partir de la clase "Celular"
 # Este procedimiento se lo conoce como "instanciar un objeto"
 # Cuando creamos un objeto estamos creando una instancia de un clase.
+# Al crear un objeto se almacena en la Ram y se elimina al terminar el programa
 
 celular_1 = Celular()
 print(celular_1)
 
 # Para ver la marca del celular y lo mismo para ver modelo y camara
-print(celular_1.marca)
+print(celular_1.marca) # muestra la marca
+print(celular_1.camara) # muestra la camara
+print(celular_1.modelo) # muestra el modelo
 
 # Para cambiar la marca del celular
 celular_1.marca = "Motorola"

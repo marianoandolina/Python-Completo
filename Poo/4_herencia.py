@@ -15,9 +15,10 @@ class Persona:
 # Creamos la otra clase que va a heredar de la clase creada anteriormente (Persona)
 class Empleado(Persona):
     def __init__(self,nombre, edad, nacionalidad, trabajo, salario):
-        # De la siguiente manera le indicamos que es lo que tiene que heredar de la clase padre
-        # En este caso va a heredar nombre, edad y nacionalidad de la clase padre
         super().__init__(nombre, edad, nacionalidad)
+        # De la esta manera con la funcion super().__init__ le indicamos que es lo que tiene que heredar de la clase padre
+        # En este caso va a heredar nombre, edad y nacionalidad de la clase padre
+        # Y luego definimos los atributos exclusivos del objeto que estamos creando que no son heredados de la clase padre
         self.trabajo = trabajo
         self.salario = salario
 
