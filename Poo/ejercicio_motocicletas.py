@@ -31,6 +31,16 @@ class Motocicleta:
         Modelo: {self.modelo}
         Matricula: {self.matricula}        
         """
+    def consultar_precio(self):
+        print(f"El precio de la motocicleta {self.marca}, modelo {self.modelo} es de ${self.precio} ")
+
+    def comprobar_combustible(self):
+        combustible_actual = self.combustible_litros
+        maximo_carga = 10
+
+        print(f"El combustible de la moto {self.marca}, {self.modelo}, matricula {self.matricula} es de {self.combustible_litros} litros")
+
+    
 
 
 moto_1 = Motocicleta("negra", "HIR749", 10, 2, "Yamaha", "ybr125", "20 - 9 - 2023", "110 km", "140 kg")
@@ -46,5 +56,8 @@ print(moto_1.motor)
 print(moto_2.marca)
 print(moto_1)
 print(moto_2)
-
-
+setattr(moto_1, "precio", 850000)
+print(f"El precio de la motocicleta {moto_1.marca}, modelo {moto_1.modelo} es de ${moto_1.precio}")
+moto_1.consultar_precio()
+#moto_2.consultar_precio()
+moto_1.comprobar_combustible()
