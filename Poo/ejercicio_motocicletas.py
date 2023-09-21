@@ -25,8 +25,16 @@ class Motocicleta:
         elif self.motor == False:
             print(f"El motor de la moto matricula {self.matricula} ya se encuentra detenido.")
 
+    def __str__(self):
+        return f"""
+        Marca: {self.marca}
+        Modelo: {self.modelo}
+        Matricula: {self.matricula}        
+        """
+
 
 moto_1 = Motocicleta("negra", "HIR749", 10, 2, "Yamaha", "ybr125", "20 - 9 - 2023", "110 km", "140 kg")
+moto_2 = Motocicleta(color="amarillo", numero_ruedas=2, combustible_litros=10, matricula="ARH724", modelo="biz", marca="honda", peso=130, velocidad_punta= "115 km", fecha_fabricacion= "10 - 9 - 2023" )
 
 print(moto_1.modelo)
 moto_1.arrancar()
@@ -35,3 +43,8 @@ moto_1.arrancar()
 moto_1.detener()
 moto_1.detener()
 print(moto_1.motor)
+print(moto_2.marca)
+print(moto_1)
+print(moto_2)
+
+
