@@ -36,12 +36,24 @@ class Motocicleta:
 
     def comprobar_combustible(self):
         combustible_actual = self.combustible_litros
-        maximo_carga = 10
+        maximo_carga = self.carga_maxima_tanque
+        litros_faltantes = maximo_carga - self.combustible_litros
 
-        print(f"El combustible de la moto {self.marca}, {self.modelo}, matricula {self.matricula} es de {self.combustible_litros} litros")
+        print(f"El combustible de la moto {self.marca}, {self.modelo}, matricula {self.matricula} es de {self.combustible_litros} litros\n, la moto carga un maximo de {maximo_carga}, le faltan {litros_faltantes} litros")
 
-    
+    def cargar_combustible(self):
+        while True:
+            carga = int(input("Cuantos litros quiere cargar?:\n"))
+            faltante = (self.carga_maxima_tanque - self.combustible_litros)            
+            if carga > faltante:
+                print(f"Al tanque le faltan {faltante} litros")
+                print("Indicaste una carga mayor a lo que le falta al tanque")
 
+            else:
+                print("La carga se realizo correctamente")
+                self.combustible_litros = self.combustible_litros + carga
+                return self.comprobar_combustible()
+                break
 
 moto_1 = Motocicleta("negra", "HIR749", 10, 2, "Yamaha", "ybr125", "20 - 9 - 2023", "110 km", "140 kg")
 moto_2 = Motocicleta(color="amarillo", numero_ruedas=2, combustible_litros=10, matricula="ARH724", modelo="biz", marca="honda", peso=130, velocidad_punta= "115 km", fecha_fabricacion= "10 - 9 - 2023" )
@@ -57,7 +69,10 @@ print(moto_2.marca)
 print(moto_1)
 print(moto_2)
 setattr(moto_1, "precio", 850000)
+setattr(moto_1, "carga_maxima_tanque", 17)
+setattr(moto_2, "carga_maxima_tanque", 20)
 print(f"El precio de la motocicleta {moto_1.marca}, modelo {moto_1.modelo} es de ${moto_1.precio}")
 moto_1.consultar_precio()
 #moto_2.consultar_precio()
 moto_1.comprobar_combustible()
+moto_1.cargar_combustible()
